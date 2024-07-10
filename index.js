@@ -53,8 +53,8 @@ app.post('/api/shorturl', function(req, res){
     urlObj.save(function(err, data){
       if(err) return console.log(err);
       res.json({
-        original: urlLink.href,
-        short: s
+        original_url: urlLink.href,
+        short_url: s
       });
     });
   });
